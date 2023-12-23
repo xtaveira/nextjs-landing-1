@@ -1,16 +1,19 @@
+import Features from '@/components/Features'
+import Hero from '@/components/Hero'
+import Text from '@/components/Text'
 import React from 'react'
 
 const Home = () => {
   return (
     <main>
       {/* Capture reader's attention first */}
-      <section>Hero</section>
+      <Hero />
 
       {/* Describe the problem your header has and how you will adress it */}
-      <section>Text</section>
+      <Text />
 
       {/* Sell you points, Features + Benefits */}
-      <section>Features</section>
+      <Features />
 
       {/* Testimonials from your service */}
       <section>Social Proof</section>
