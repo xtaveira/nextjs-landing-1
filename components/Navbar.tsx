@@ -1,10 +1,36 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="border-2 border-red-500 w-screen flex justify-between p-5">
-        <div>Logo</div>
-        <div>Buttons</div>
+    <nav className=" w-screen flex justify-between p-5 items-center">
+      <div className="border-2 border-white rounded flex items-center">
+        <Image
+          src="/MetroLogo.png"
+          alt='Metro Logo'
+          width={120}
+          height={28}
+        />
+      </div>
+
+      {/* Mobile Devices */}
+      <div className="md:hidden">
+        <Image
+          src="/MenuNavbar.png"
+          alt='Menu Logo'
+          width={28}
+          height={28}
+        />
+      </div>
+
+      {/* Desktop Devices */}
+      <div className="hidden md:flex justify-end gap-10">
+        <a target='_blank' href={"https://www.metro.sp.gov.br/sua-viagem/trajeto"} className="border border-white px-7 py-1 rounded-full items-center flex">Como usar?</a>
+        <a target='_blank' href={"https://www.metro.sp.gov.br/wp-content/uploads/2023/12/mapaderede.pdf"} className="border border-white rounded-full px-7 py-1 rounded">Mapa de Rede</a>
+      </div>
+
+
     </nav>
   )
 }
