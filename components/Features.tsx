@@ -33,7 +33,7 @@ const Features = () => {
         <h3>Por que andar de Metro?</h3>
         <div className="w-full md:hidden">
         <Swiper
-            slides-per-view={1}
+            slidesPerView={1}
             loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
             speed={5000}
@@ -50,7 +50,7 @@ const Features = () => {
 
         <div className="w-full md:block hidden">
           <Swiper
-            slides-per-view={3}
+            slidesPerView={3}
             loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
             speed={5000}
