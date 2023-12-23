@@ -6,7 +6,7 @@ type Props = {
 
 const FeatureCard = ({text}: Props) => {
   return (
-    <div className="w-[300px] py-3 px-4 bg-white text-blue-800 rounded-[1rem] text-justify items-center flex h-[150px]">
+    <div className="w-[300px] py-4 px-4 border-2 border-blue-800 bg-white text-blue-800 rounded-[1rem] text-justify items-center flex h-[150px]">
         <p>{text}</p>
     </div>
   )

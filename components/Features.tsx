@@ -27,10 +27,10 @@ const Features = () => {
   ]
 
   return (
-    <section className="border-2 border-yellow-400 w-full py-6 px-5 flex justify-evenly items-center
+    <section className=" w-full py-6 px-5 flex justify-evenly items-center
     flex-col md:flex-row">
       <div className="flex flex-col w-full items-start gap-5">
-        <h3>Por que andar de Metro?</h3>
+        <h3 className='text-[1.4rem] bg-blue-800 py-2 px-4 rounded-[0.6rem]'><strong>Por que andar de Metro?</strong></h3>
         <div className="w-full md:hidden">
         <Swiper
             slidesPerView={1}

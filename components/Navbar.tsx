@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Devices */}
-      <div className="md:hidden">
+      <div className="md:hidden border-2 border-white rounded p-1 bg-blue-800">
         <Image
           src="/MenuNavbar.png"
           alt='Menu Logo'
@@ -26,8 +26,8 @@ const Navbar = () => {
 
       {/* Desktop Devices */}
       <div className="hidden md:flex justify-end gap-10">
-        <a target='_blank' href={"https://www.metro.sp.gov.br/sua-viagem/trajeto"} className="border-2 border-white px-7 py-1 rounded-full items-center flex bg-blue-800">Como usar?</a>
-        <a target='_blank' href={"https://www.metro.sp.gov.br/wp-content/uploads/2023/12/mapaderede.pdf"} className="border-2 border-white rounded-full px-7 py-1 bg-blue-800">Mapa de Rede</a>
+        <a target='_blank' href={"https://www.metro.sp.gov.br/sua-viagem/trajeto"} className="border-2 border-white px-7 py-1 rounded items-center flex bg-blue-800">Como usar?</a>
+        <a target='_blank' href={"https://www.metro.sp.gov.br/wp-content/uploads/2023/12/mapaderede.pdf"} className="border-2 border-white rounded px-7 py-1 bg-blue-800">Mapa de Rede</a>
       </div>
 
 

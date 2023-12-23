@@ -1,3 +1,4 @@
+import CallToAction from '@/components/CallToAction'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Text from '@/components/Text'
@@ -12,14 +13,13 @@ const Home = () => {
       {/* Describe the problem your header has and how you will adress it */}
       <Text />
 
-      {/* Sell you points, Features + Benefits */}
-      <Features />
+      <div className='custom-background bg-cover bg-center'>
+        {/* Sell you points, Features + Benefits */}
+        <Features />
+        {/* CTA is the easy possibiliry for readers to engage */}
+        <CallToAction />
+      </div>
 
-      {/* Testimonials from your service */}
-      <section>Social Proof</section>
-
-      {/* CTA is the easy possibiliry for readers to engage */}
-      <section>Call to Action</section>
 
     </main>
   )
