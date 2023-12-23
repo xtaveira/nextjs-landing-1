@@ -32,37 +32,37 @@ const Features = () => {
       <div className="flex flex-col w-full items-start gap-5">
         <h3>Por que andar de Metro?</h3>
         <div className="w-full md:hidden">
-        <swiper-container
-            slides-per-view="3"
-            loop="true"
+        <Swiper
+            slides-per-view={1}
+            loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            speed="500"
+            speed={5000}
             modules={[Autoplay]}
             className="w-full"
           >
             {benefits.map((benefit, index) => (
-              <swiper-slide key={index} className='flex items-center'>
+              <SwiperSlide key={index} className='flex items-center'>
                 <FeatureCard text={benefit.desc} />
-              </swiper-slide>
+              </SwiperSlide>
             ))}
-          </swiper-container>
+          </Swiper>
         </div>
 
         <div className="w-full md:block hidden">
-          <swiper-container
-            slides-per-view="3"
-            loop="true"
+          <Swiper
+            slides-per-view={3}
+            loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            speed="500"
+            speed={5000}
             modules={[Autoplay]}
             className="w-full"
           >
             {benefits.map((benefit, index) => (
-              <swiper-slide key={index} className='flex items-center'>
+              <SwiperSlide key={index} className='flex items-center'>
                 <FeatureCard text={benefit.desc} />
-              </swiper-slide>
+              </SwiperSlide>
             ))}
-          </swiper-container>
+          </Swiper>
         </div>
 
 
