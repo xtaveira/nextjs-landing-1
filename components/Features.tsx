@@ -31,9 +31,11 @@ const Features = () => {
     flex-col md:flex-row">
       <div className="flex flex-col w-full items-start gap-5">
         <h3 className='text-[1.4rem] bg-blue-800 py-2 px-4 mb-5 rounded-[0.6rem]'><strong>Por que andar de Metro?</strong></h3>
-        <div className="w-full md:hidden">
+
+        {/* Desktop Devices */}
+        <div className="w-full lg:block md:hidden hidden">
         <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
             speed={5000}
@@ -48,9 +50,29 @@ const Features = () => {
           </Swiper>
         </div>
 
-        <div className="w-full md:block hidden">
+
+        {/* iPad and Tablets */}
+        <div className="w-full hidden md:block lg:hidden">
+        <Swiper
+            slidesPerView={2}
+            loop={true}
+            autoplay={{ delay: 0, disableOnInteraction: false }}
+            speed={5000}
+            modules={[Autoplay]}
+            className="w-full"
+          >
+            {benefits.map((benefit, index) => (
+              <SwiperSlide key={index} className='flex items-center'>
+                <FeatureCard text={benefit.desc} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+{/* Mobile iPhones and Androids */}
+        <div className="w-full lg:hidden md:hidden">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false }}
             speed={5000}
