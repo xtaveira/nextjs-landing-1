@@ -13,7 +13,7 @@ const Text = () => {
       <div className="w-[80%] bg-white text-blue-800 border-2 border-blue-800
         md:w-[40%] rounded-[1rem] px-4 py-2 flex items-center justify-center text-justify h-[140px]">
         <p>
-          Felizmente, por meio da nossa tecnologia, hoje temos a solução de <strong><a target='_blank' href={"https://www.metro.sp.gov.br/sua-viagem/trajeto"}>Como usar?</a></strong> o Metro, que funciona de forma <strong>Fácil</strong> e <strong>Intuitiva.</strong>
+          Felizmente, por meio da nossa tecnologia, hoje temos a solução de <strong><a target='_blank' href={"https://www.metro.sp.gov.br/sua-viagem/trajeto"}>Como usar</a></strong> o Metro, que funciona de forma <strong>Fácil</strong> e <strong>Intuitiva.</strong>
         </p>
       </div>
     </section >
