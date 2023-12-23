@@ -7,7 +7,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 import { Autoplay } from 'swiper/modules'
 
+import { register } from 'swiper/element/bundle';
+
+
 const Features = () => {
+  register();
 
   const benefits = [
     { desc: "A existência do Metrô resulta em reduções de: consumo de combustíveis utilizados pelos outros modos; custos de manutenção e operação de vias; tempos de viagens e de acidentes." },
@@ -28,37 +32,37 @@ const Features = () => {
       <div className="flex flex-col w-full items-start gap-5">
         <h3>Por que andar de Metro?</h3>
         <div className="w-full md:hidden">
-          <Swiper
-            slidesPerView={1}
-            loop={true}
+        <swiper-container
+            slides-per-view="3"
+            loop="true"
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            speed={5000}
+            speed="500"
             modules={[Autoplay]}
             className="w-full"
           >
             {benefits.map((benefit, index) => (
-              <SwiperSlide key={index} className='flex items-center'>
+              <swiper-slide key={index} className='flex items-center'>
                 <FeatureCard text={benefit.desc} />
-              </SwiperSlide>
+              </swiper-slide>
             ))}
-          </Swiper>
+          </swiper-container>
         </div>
 
         <div className="w-full md:block hidden">
-          <Swiper
-            slidesPerView={3}
-            loop={true}
+          <swiper-container
+            slides-per-view="3"
+            loop="true"
             autoplay={{ delay: 0, disableOnInteraction: false }}
-            speed={5000}
+            speed="500"
             modules={[Autoplay]}
             className="w-full"
           >
             {benefits.map((benefit, index) => (
-              <SwiperSlide key={index} className='flex items-center'>
+              <swiper-slide key={index} className='flex items-center'>
                 <FeatureCard text={benefit.desc} />
-              </SwiperSlide>
+              </swiper-slide>
             ))}
-          </Swiper>
+          </swiper-container>
         </div>
 
 
